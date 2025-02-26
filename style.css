@@ -1,0 +1,27 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    background: rgb(255, 255, 255);
+    outline: 3px dashed black;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    margin: auto;
+    transform-style: preserve-3d;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+    perspective: 800px;
+    justify-content: space-between; 
+    align-content: space-between;  
+}
+
+.square {
+    flex: 0 0 calc(33.33% - 10px);
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    outline: 3px dashed black;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1; 
+    margin: auto;
+}
